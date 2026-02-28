@@ -37,7 +37,9 @@ coverage/
 .cache/
 
 # Claude
+CLAUDE.md
 .claude/
-prompt.txt
 .figma
 .figma_exports
+
+prompt*
