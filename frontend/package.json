@@ -1,0 +1,13 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "_Faaaaaaala, dev! Vamos agora passar pelos requisitos desse desafio._",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "mlima2412",
+  "license": "ISC",
+  "type": "commonjs"
+}
