@@ -35,11 +35,3 @@ coverage/
 # Misc
 *.tsbuildinfo
 .cache/
-
-# Claude
-CLAUDE.md
-.claude/
-.figma
-.figma_exports
-
-prompt*
