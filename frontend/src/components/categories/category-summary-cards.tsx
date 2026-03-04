@@ -44,31 +44,37 @@ export function CategorySummaryCards({
 
   return (
     <div className="flex gap-[24px]">
-      <SummaryCard
-        icon={<TagIcon className="size-[24px] text-brand" />}
-        label="Total de categorias"
-        value={totalCategories}
-      />
-      <SummaryCard
-        icon={<ArrowUpDown className="size-[24px] text-brand" />}
-        label="Total de transações"
-        value={totalTransactions}
-      />
-      <SummaryCard
-        icon={
-          mostUsed ? (
-            <DynamicIcon
-              name={mostUsed.icon}
-              className="size-[24px]"
-              style={{ color: mostUsed.color }}
-            />
-          ) : (
-            <TagIcon className="size-[24px] text-gray-400" />
-          )
-        }
-        label="Categoria mais utilizada"
-        value={mostUsedCategory ?? "-"}
-      />
+      <div className="flex-1">
+        <SummaryCard
+          icon={<TagIcon className="size-[24px]" style={{ color: "#374151" }} />}
+          label="Total de categorias"
+          value={totalCategories}
+        />
+      </div>
+      <div className="flex-1">
+        <SummaryCard
+          icon={<ArrowUpDown className="size-[24px]" style={{ color: "#9333EA" }} />}
+          label="Total de transações"
+          value={totalTransactions}
+        />
+      </div>
+      <div className="flex-1">
+        <SummaryCard
+          icon={
+            mostUsed ? (
+              <DynamicIcon
+                name={mostUsed.icon}
+                className="size-[24px]"
+                style={{ color: mostUsed.color }}
+              />
+            ) : (
+              <TagIcon className="size-[24px] text-gray-400" />
+            )
+          }
+          label="Categoria mais utilizada"
+          value={mostUsedCategory ?? "-"}
+        />
+      </div>
     </div>
   );
 }

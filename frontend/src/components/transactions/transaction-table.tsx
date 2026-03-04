@@ -1,5 +1,5 @@
 import { memo } from "react";
-import Pencil from "lucide-react/dist/esm/icons/pencil";
+import SquarePen from "lucide-react/dist/esm/icons/square-pen";
 import Trash from "lucide-react/dist/esm/icons/trash";
 import { DynamicIcon } from "@/components/ui/dynamic-icon";
 import { Tag } from "@/components/ui/tag";
@@ -99,7 +99,7 @@ const TransactionTableRow = memo(function TransactionTableRow({
         />
         <IconButton
           variant="outline"
-          icon={<Pencil className="size-[24px]" />}
+          icon={<SquarePen className="size-[24px]" />}
           onClick={onEdit}
         />
       </div>

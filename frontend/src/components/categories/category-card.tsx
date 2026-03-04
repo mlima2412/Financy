@@ -1,5 +1,5 @@
 import { memo } from "react";
-import Pencil from "lucide-react/dist/esm/icons/pencil";
+import SquarePen from "lucide-react/dist/esm/icons/square-pen";
 import Trash from "lucide-react/dist/esm/icons/trash";
 import { DynamicIcon } from "@/components/ui/dynamic-icon";
 import { IconButton } from "@/components/ui/icon-button";
@@ -23,9 +23,9 @@ export const CategoryCard = memo(function CategoryCard({ category, onEdit, onDel
       <div className="flex items-start justify-between">
         <div
           className="flex size-[40px] items-center justify-center rounded-[8px]"
-          style={{ backgroundColor: lightBg }}
+          style={{ backgroundColor: category.color }}
         >
-          <DynamicIcon name={category.icon} className="size-[24px]" style={{ color: darkColor }} />
+          <DynamicIcon name={category.icon} className="size-[24px]" style={{ color: "#FFFFFF" }} />
         </div>
         <div className="flex gap-[8px]">
           <IconButton
@@ -35,7 +35,7 @@ export const CategoryCard = memo(function CategoryCard({ category, onEdit, onDel
           />
           <IconButton
             variant="outline"
-            icon={<Pencil className="size-[24px]" />}
+            icon={<SquarePen className="size-[24px]" />}
             onClick={onEdit}
           />
         </div>
